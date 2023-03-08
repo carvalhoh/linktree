@@ -1,0 +1,83 @@
+:root {
+    --bgbody: rgba(94, 14, 94, 0.801);
+    --ff: arial;
+    --fch1: var(--fcbutton);
+    --fcbutton: rgb(79, 214, 74);
+    --bcbutton: var(--fcbutton);
+    --buttonhover: rgb(145, 85, 145);
+    --ts: rgba(0, 0, 0, 0.596);
+}
+
+body, header, main, a, button, h1 {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bgbody);
+    font-family: var(--ff);
+}
+
+header, main, button {
+    border-radius: 5px;
+}
+
+header, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin-top:20px ;
+    width: 40vw;
+    height: 15vh;
+}
+
+main {
+    margin-top: 5px;
+    width: 40vw;
+    height: auto;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--fch1);
+    text-shadow: 1px 2px 3px var(--ts);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: transparent;
+    color: var(--fcbutton);
+    margin: 5px 0;
+    width: 40vw;
+    border: 1px solid var(--bcbutton);
+    text-align: center;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    text-shadow: 1px 2px 3px var(--ts);
+    box-shadow: 1px 2px 5px var(--ts);;
+}
+
+button:hover {
+    background: var(--buttonhover);
+}
+
+.container-links {
+    margin: 0;
+}
+
+@media screen and (max-width: 764px) {
+    h1 {
+        font-size: 21px;
+    }
+}
