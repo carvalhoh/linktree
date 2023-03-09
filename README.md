@@ -4,3 +4,6 @@ Criei uma árvore de links, onde podesse colocar links diversos, desde whatsapp,
 ## Tecnologia
 * HTML
 * CSS (com uma leve responsividade)
+
+### OBS
+* Favicon
